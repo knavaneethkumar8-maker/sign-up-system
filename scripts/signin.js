@@ -8,6 +8,7 @@ continueButton.addEventListener('click', () => {
   const input = emailInput.value;
   if(input) {
     console.log(input);
+    emailInput.value = '';
   } else {
     console.log('please enter email');
   }
