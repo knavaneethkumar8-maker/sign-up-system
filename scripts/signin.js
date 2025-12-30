@@ -9,8 +9,11 @@ continueButton.addEventListener('click', async () => {
   if(input) {
     console.log(input);
     emailInput.value = '';
-    const result = await fetch('http://localhost:3500/');
-    console.log(`successfully fetched : ${result}`);
+    const result = await fetch('http://localhost:3500/index')
+                    .then((response) => {
+                      return response.text()
+                    });
+    console.log(`successfully fetched : ${ result}`);
   } else {
     console.log('please enter email');
   }
