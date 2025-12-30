@@ -6,5 +6,10 @@ const emailInput = document.querySelector('.js-email-input');
 continueButton.addEventListener('click', () => {
   console.log('sign in');
   const input = emailInput.value;
-  console.log(input);
+  if(input) {
+    console.log(input);
+  } else {
+    console.log('please enter email');
+  }
+  
 });
