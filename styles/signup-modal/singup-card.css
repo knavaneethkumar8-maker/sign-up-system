@@ -1,0 +1,44 @@
+.signup-modal {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 400px;
+  padding: 20px;
+  border-radius: 16px;
+  transition: box-shadow 0.15s;
+}
+
+.signup-modal:hover {
+  box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.543);
+}
+
+.email-input {
+  width: 300px;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: solid 1.5px rgb(163, 163, 163);
+  margin-bottom: 20px;
+}
+
+.continue-button {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  border: none;
+  padding: 14px 20px;
+
+  border-radius: 40px;
+  transition: background-color 0.15s;
+
+}
+
+.continue-button:hover {
+  background-color: rgb(23, 23, 23);
+}
