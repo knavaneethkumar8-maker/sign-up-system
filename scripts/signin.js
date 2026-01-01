@@ -15,11 +15,11 @@ continueButton.addEventListener('click', async () => {
       headers : {
         "Content-Type" : "application/json"
       },
-      body : {
+      body : JSON.stringify({
         "username" : "Vetrimaran",
         "email" : "nithinvenkatesh@gmail.com",
         "pwd" : "222"
-      }
+      })
     }).then((response) => {
       return response.json();
     }).catch((err) => {
