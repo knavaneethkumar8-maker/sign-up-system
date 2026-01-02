@@ -9,23 +9,27 @@ continueButton.addEventListener('click', async () => {
   if(input) {
     console.log(input);
     emailInput.value = '';
-    const result = await fetch('http://localhost:3500/register', {
-      credentials : 'include',
-      method : 'POST',
-      headers : {
-        "Content-Type" : "application/json"
-      },
-      body : JSON.stringify({
-        "username" : "Vetrimaran",
-        "email" : "nithinvenkatesh@gmail.com",
-        "pwd" : "222"
-      })
-    }).then((response) => {
-      return response.json();
-    }).catch((err) => {
-      console.log(err);
-    });
-    console.log(`successfully fetched : ${ result}`);
+    try {
+      const response = await fetch('http://localhost:3500/register', {
+        credentials : 'include',
+        method : 'POST',
+        headers : {
+          "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+          "username" : "charan",
+          "email" : "charan@gmail.com",
+          "pwd" : "222"
+        })
+      });
+      const result = await response.json();
+      console.log(`response message : ${result.message}`, result.newUser );
+
+    }catch (err) {
+      console.log(err.message);
+    }
+    
+    
   } else {
     console.log('please enter email');
   }
