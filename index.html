@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,25 @@
 </head>
 <body>
   <div class="main">
-    main section
+    <div class="response-container">
+      <p class="response js-response">
+        response
+      </p>
+
+    </div>
     <div class="signup-modal">
       <input type="text" placeholder="Email" class="email-input js-email-input">
+      <input type="text" placeholder="Password" class="password-input email-input js-password-input">
+      <div class="message-field">
+        <p class="status-message js-status-message hide">
+          Good question
+        </p>
+      </div>
       <button class="continue-button js-continue-button">
         Continue
       </button>
       
     </div>
-
   </div>
 
   <script src="scripts/signin.js"></script>

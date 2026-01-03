@@ -11,3 +11,22 @@ button {
   cursor: pointer;
   border: none;
 }
+
+
+p {
+  margin: 0px;
+}
+
+
+.hide {
+  opacity: 0;
+}
+
+.flex-show {
+  display: flex;
+}
+
+
+.input-error {
+  border-color: red;
+}
